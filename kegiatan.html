@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Profil Dusun Gagan - Kegiatan</title>
+    <meta name="description" content="Website resmi Dusun Gagan - Mengenal lebih dekat kehidupan dan potensi Dusun Gagan">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'sky-dark': '#1E3A8A',
+                        'sun-yellow': '#FFD700'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-sky-dark min-h-screen text-white">
+    <!-- Header -->
+    <header class="bg-sky-dark/95 backdrop-blur-sm shadow-lg fixed w-full top-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-4 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-3">
+                    <i class="fas fa-mountain text-3xl text-sun-yellow"></i>
+                    <span class="text-xl font-bold text-sky-deep">Dusun Gagan</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <ul class="hidden lg:flex space-x-8">
+                    <li><a href="index.html" class="nav-link text-sky-dark hover:text-sun-yellow transition-colors duration-300">Beranda</a></li>
+                    <li><a href="profil.html" class="nav-link text-sky-dark hover:text-sun-yellow transition-colors duration-300">Profil</a></li>
+                    <li><a href="fasilitas.html" class="nav-link text-sky-dark hover:text-sun-yellow transition-colors duration-300">Fasilitas</a></li>
+                    <li><a href="potensi.html" class="nav-link text-sky-dark hover:text-sun-yellow transition-colors duration-300">Potensi</a></li>
+                    <li><a href="kegiatan.html" class="nav-link text-sky-dark font-medium hover:text-sun-yellow transition-colors duration-300 border-b-2 border-sun-yellow">Kegiatan</a></li>
+                    <li><a href="kontak.html" class="nav-link text-sky-dark hover:text-sun-yellow transition-colors duration-300">Kontak</a></li>
+                </ul>
+                
+                <!-- Mobile menu button -->
+                <button class="lg:hidden nav-toggle flex flex-col space-y-1">
+                    <span class="w-6 h-0.5 bg-sky-deep transition-all duration-300"></span>
+                    <span class="w-6 h-0.5 bg-sky-deep transition-all duration-300"></span>
+                    <span class="w-6 h-0.5 bg-sky-deep transition-all duration-300"></span>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div class="lg:hidden nav-menu hidden bg-white border-t border-sky-light">
+                <ul class="py-4 space-y-2">
+                    <li><a href="index.html" class="block px-4 py-2 text-sky-dark hover:bg-sky-light transition-colors">Beranda</a></li>
+                    <li><a href="profil.html" class="block px-4 py-2 text-gray-600 hover:bg-sky-light transition-colors">Profil</a></li>
+                    <li><a href="fasilitas.html" class="block px-4 py-2 text-gray-600 hover:bg-sky-light transition-colors">Fasilitas</a></li>
+                    <li><a href="potensi.html" class="block px-4 py-2 text-gray-600 hover:bg-sky-light transition-colors">Potensi</a></li>
+                    <li><a href="kegiatan.html" class="block px-4 py-2 text-gray-600 hover:bg-sky-light transition-colors">Kegiatan</a></li>
+                    <li><a href="kontak.html" class="block px-4 py-2 text-gray-600 hover:bg-sky-light transition-colors">Kontak</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="bg-gradient-to-br from-sky-medium via-sky-deep to-green-deep text-white text-center pt-24 pb-16 mt-20">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 animate-fade-in-up">
+                <i class="fas fa-calendar-alt text-sun-yellow mr-4"></i>
+                Kegiatan Desa
+            </h1>
+            <p class="text-lg md:text-xl lg:text-2xl opacity-90 max-w-3xl mx-auto">Daftar kegiatan masyarakat Dusun Gagan</p>
+        </div>
+    </section>
+
+    <main class="bg-white text-gray-800 py-16">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Aktivitas 1 -->
+                <article class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <img src="img/kegiatan/Bazar.jpg" alt="Bazar" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mt-2 mb-2">Bazar</h3>
+                        <p class="text-gray-700 text-sm">Kegiatan pasar lokal.</p>
+                    </div>
+                </article>
+                <!-- Aktivitas 2 -->
+                <article class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <img src="img/kegiatan/Doa Bersama.jpg" alt="Doa Bersama" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mt-2 mb-2">Doa Bersama</h3>
+                        <p class="text-gray-700 text-sm">Kegiatan doa bersama masyarakat.</p>
+                    </div>
+                </article>
+                <!-- Aktivitas 3 -->
+                <article class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <img src="img/kegiatan/Jamur Tiram.png" alt="Jamur Tiram" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mt-2 mb-2">Jamur Tiram</h3>
+                        <p class="text-gray-700 text-sm">Budidaya jamur tiram.</p>
+                    </div>
+                </article>
+                <!-- Aktivitas 4 -->
+                <article class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <img src="img/kegiatan/Jumat Berkah.jpg" alt="Jumat Berkah" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mt-2 mb-2">Jumat Berkah</h3>
+                        <p class="text-gray-700 text-sm">Kegiatan sosial setiap hari Jumat.</p>
+                    </div>
+                </article>
+                <!-- Aktivitas 5 -->
+                <article class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <img src="img/kegiatan/Kelas Ibu Balita.jpg" alt="Kelas Ibu Balita" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mt-2 mb-2">Kelas Ibu Balita</h3>
+                        <p class="text-gray-700 text-sm">Kegiatan pembelajaran untuk ibu dan balita.</p>
+                    </div>
+                </article>
+                <!-- Aktivitas 6 -->
+                <article class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <img src="img/kegiatan/Kerja Bakti Bulanan.jpg" alt="Kerja Bakti Bulanan" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mt-2 mb-2">Kerja Bakti Bulanan</h3>
+                        <p class="text-gray-700 text-sm">Kegiatan kerja bakti membersihkan lingkungan dusun.</p>
+                    </div>
+                </article>
+                <!-- Aktivitas 7 -->
+                <article class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <img src="img/kegiatan/Malam Renungan 17 Agustus.jpg" alt="Malam Renungan 17 Agustus" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mt-2 mb-2">Malam Renungan 17 Agustus</h3>
+                        <p class="text-gray-700 text-sm">Kegiatan renungan malam memperingati hari kemerdekaan.</p>
+                    </div>
+                </article>
+                <!-- Aktivitas 8 -->
+                <article class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <img src="img/kegiatan/Posiandu.jpg" alt="Posiandu" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mt-2 mb-2">Posyandu</h3>
+                        <p class="text-gray-700 text-sm">Kegiatan posyandu untuk pemeriksaan kesehatan balita.</p>
+                    </div>
+                </article>
+                <!-- Aktivitas 9 -->
+                <article class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <img src="img/kegiatan/Screening Kesehatan.jpg" alt="Screening Kesehatan" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mt-2 mb-2">Screening Kesehatan</h3>
+                        <p class="text-gray-700 text-sm">Pemeriksaan kesehatan gratis untuk masyarakat.</p>
+                    </div>
+                </article>
+                <!-- Aktivitas 10 -->
+                <article class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <img src="img/kegiatan/Senam Lansia.jpg" alt="Senam Lansia" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mt-2 mb-2">Senam Lansia</h3>
+                        <p class="text-gray-700 text-sm">Kegiatan senam lansia di pagi hari untuk kesehatan.</p>
+                    </div>
+                </article>
+                <!-- Aktivitas 11 -->
+                <article class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <img src="img/kegiatan/Bersih bersih lapangan.png" alt="Bersih Bersih Lapangan" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mt-2 mb-2">Bersih Bersih Lapangan</h3>
+                        <p class="text-gray-700 text-sm">Kegiatan gotong royong membersihkan lapangan voli.</p>
+                    </div>
+                </article>
+                <!-- Aktivitas 12 -->
+                <article class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <img src="img/kegiatan/Bimbingan Belajar.png" alt="Bimbingan Belajar" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mt-2 mb-2">Bimbingan Belajar</h3>
+                        <p class="text-gray-700 text-sm">Kegiatan bimbingan belajar untuk anak-anak sekolah dasar.</p>
+                    </div>
+                </article>
+                <!-- Aktivitas 13 -->
+                <article class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <img src="img/kegiatan/Branding UMKM.png" alt="Branding UMKM" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mt-2 mb-2">Branding UMKM</h3>
+                        <p class="text-gray-700 text-sm">Branding UMKM melalui pembaharuan banner dan pemasangan.</p>
+                    </div>
+                </article>
+                <!-- Aktivitas 14 -->
+                <article class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <img src="img/kegiatan/Edukasi Cashless Payment.png" alt="Edukasi Cashless Payment" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mt-2 mb-2">Edukasi Cashless Payment</h3>
+                        <p class="text-gray-700 text-sm">Sosialisasi penggunaan pembayaran digital untuk remaja dan pemuda.</p>
+                    </div>
+                </article>
+                <!-- Aktivitas 15 -->
+                <article class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <img src="img/kegiatan/Kelas Bahasa Inggris.png" alt="Kelas Bahasa Inggris" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mt-2 mb-2">Kelas Bahasa Inggris</h3>
+                        <p class="text-gray-700 text-sm">Pelatihan bahasa Inggris untuk anak SD dan SMP.</p>
+                    </div>
+                </article>
+                <!-- Aktivitas 16 -->
+                <article class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <img src="img/kegiatan/Kreativitas Meronce.png" alt="Kreativitas Meronce" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mt-2 mb-2">Kreativitas Meronce</h3>
+                        <p class="text-gray-700 text-sm">Pelatihan kreativitas, motorik dan koordinasi anak usia dini melalui meronce.</p>
+                    </div>
+                </article>
+                <!-- Aktivitas 17 -->
+                <article class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <img src="img/kegiatan/Merti Dusun Gagan.png" alt="Merti Dusun" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mt-2 mb-2">Merti Dusun</h3>
+                        <p class="text-gray-700 text-sm">Acara syukuran dusun.</p>
+                    </div>
+                </article>
+                <!-- Aktivitas 18 -->
+                <article class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <img src="img/kegiatan/Pengajian.png" alt="Pengajian" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mt-2 mb-2">Pengajian Lapanan Jumat Pon</h3>
+                        <p class="text-gray-700 text-sm">Kegiatan pengajian rutin warga desa oleh ibu-ibu.</p>
+                    </div>
+                </article>
+                <!-- Aktivitas 19 -->
+                <article class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <img src="img/kegiatan/Plastic Reborn.png" alt="Plastic Reborn" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mt-2 mb-2">Plastic Reborn</h3>
+                        <p class="text-gray-700 text-sm">Kegiatan daur ulang limbah plastik menjadi barang berguna.</p>
+                    </div>
+                </article>
+                <!-- Aktivitas 20 -->
+                <article class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <img src="img/kegiatan/Senam Jantung Sehat.png" alt="Senam Jantung Sehat" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mt-2 mb-2">Senam Jantung Sehat</h3>
+                        <p class="text-gray-700 text-sm">Kegiatan senam bersama untuk menjaga kesehatan jantung.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-br from-sky-deep to-green-deep text-white">
+        <div class="container mx-auto px-4 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <i class="fas fa-mountain text-3xl text-sun-yellow"></i>
+                        <span class="text-2xl font-bold">Dusun Gagan</span>
+                    </div>
+                    <p class="text-sky-light leading-relaxed mb-6">Website ini dibuat sebagai bagian dari program KKN-BN AA.83.001 UPN "Veteran" Yogyakarta untuk memperkenalkan Dusun Gagan kepada masyarakat luas dan melestarikan nilai-nilai budaya setempat.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/story.of.gagan?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="w-10 h-10 bg-sky-light/20 rounded-full flex items-center justify-center hover:bg-sky-light hover:text-sky-deep transition-all duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.instagram.com/remaja_gagan?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="w-10 h-10 bg-sky-light/20 rounded-full flex items-center justify-center hover:bg-sky-light hover:text-sky-deep transition-all duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@story.of.gagan?is_from_webapp=1&sender_device=pc" class="w-10 h-10 bg-sky-light/20 rounded-full flex items-center justify-center hover:bg-sky-light hover:text-sky-deep transition-all duration-300">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-green-light mb-4">
+                        <i class="fas fa-phone mr-2"></i>
+                        Kontak
+                    </h3>
+                    <div class="space-y-3">
+                        <p class="flex items-start text-sky-light">
+                            <i class="fas fa-map-marker-alt mr-3 text-sun-yellow mt-1"></i>
+                            Dusun Gagan, Desa Bligo<br>Kecamatan Ngluwar, Kabupaten Magelang
+                        </p>
+                    </div>
+                    <div class="mt-6 flex justify-center lg:justify-end space-x-4">
+                        <img src="img/logo kabupaten magelang.png" alt="Logo Kabupaten Magelang" class="w-12 h-13">
+                        <img src="img/logo kkn.png" alt="Logo KKN-BN AA.83.001" class="w-12 h-auto">
+                        <img src="img/logo upn.png" alt="Logo UPN Veteran Yogyakarta" class="w-12 h-auto">
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-sky-light/30 mt-8 pt-8 text-center">
+                <p class="text-sky-light">
+                    &copy; 2025 Website Profil Dusun Gagan. Dibuat dengan 
+                    <i class="fas fa-heart text-red-400 mx-1"></i> untuk masyarakat.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+    <style>
+        @keyframes fade-in-up { /* ...existing code... */ }
+        .animate-fade-in-up { /* ...existing code... */ }
+        .nav-link {
+            position: relative;
+            color: #1E3A8A !important;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #FFD700;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        i.fas { color: #FFD700 !important; }
+        .bg-sky-dark, .bg-sky-dark *, .bg-sky-blue, .bg-sky-blue * { color: #FFF !important; }
+        .bg-white, .bg-white *, .prose, .prose * { color: #000 !important; }
+    </style>
+</body>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Profil Dusun Gagan - Beranda</title>
+    <meta name="description" content="Website resmi Dusun Gagan - Mengenal lebih dekat kehidupan dan potensi Dusun Gagan">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'sky-dark': '#1E3A8A',
+                        'sun-yellow': '#FFD700'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-sky-dark min-h-screen">
+    <!-- Header -->
+    <header class="bg-sky-dark/95 backdrop-blur-sm shadow-lg fixed w-full top-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-4 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-3">
+                    <i class="fas fa-mountain text-3xl text-sun-yellow"></i>
+                    <span class="text-xl font-bold text-sky-deep">Dusun Gagan</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <ul class="hidden lg:flex space-x-8">
+                    <li><a href="index.html" class="nav-link text-sky-dark font-medium hover:text-sun-yellow transition-colors duration-300 border-b-2 border-sun-yellow">Beranda</a></li>
+                    <li><a href="profil.html" class="nav-link text-sky-dark hover:text-sun-yellow transition-colors duration-300">Profil</a></li>
+                    <li><a href="fasilitas.html" class="nav-link text-sky-dark hover:text-sun-yellow transition-colors duration-300">Fasilitas</a></li>
+                    <li><a href="potensi.html" class="nav-link text-sky-dark hover:text-sun-yellow transition-colors duration-300">Potensi</a></li>
+                    <li><a href="kegiatan.html" class="nav-link text-sky-dark hover:text-sun-yellow transition-colors duration-300">Kegiatan</a></li>
+                    <li><a href="kontak.html" class="nav-link text-sky-dark hover:text-sun-yellow transition-colors duration-300">Kontak</a></li>
+                </ul>
+                
+                <!-- Mobile menu button -->
+                <button class="lg:hidden nav-toggle flex flex-col space-y-1">
+                    <span class="w-6 h-0.5 bg-sky-deep transition-all duration-300"></span>
+                    <span class="w-6 h-0.5 bg-sky-deep transition-all duration-300"></span>
+                    <span class="w-6 h-0.5 bg-sky-deep transition-all duration-300"></span>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div class="lg:hidden nav-menu hidden bg-white border-t border-sky-light">
+                <ul class="py-4 space-y-2">
+                    <li><a href="index.html" class="block px-4 py-2 text-sky-dark hover:bg-sky-light transition-colors">Beranda</a></li>
+                    <li><a href="profil.html" class="block px-4 py-2 text-gray-600 hover:bg-sky-light transition-colors">Profil</a></li>
+                    <li><a href="fasilitas.html" class="block px-4 py-2 text-gray-600 hover:bg-sky-light transition-colors">Fasilitas</a></li>
+                    <li><a href="potensi.html" class="block px-4 py-2 text-gray-600 hover:bg-sky-light transition-colors">Potensi</a></li>
+                    <li><a href="kegiatan.html" class="block px-4 py-2 text-gray-600 hover:bg-sky-light transition-colors">Kegiatan</a></li>
+                    <li><a href="kontak.html" class="block px-4 py-2 text-gray-600 hover:bg-sky-light transition-colors">Kontak</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden"
+         style="background-color: rgba(30,58,138,0.7);
+                background-image: url('img/ancol.png');
+                background-size: cover;
+                background-position: center;
+                background-blend-mode: overlay;">
+        <!-- Background Pattern (opsional) -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-10 left-10 text-6xl text-white"><i class="fas fa-leaf"></i></div>
+            <div class="absolute top-32 right-20 text-4xl text-white"><i class="fas fa-seedling"></i></div>
+            <div class="absolute bottom-20 left-1/4 text-5xl text-white"><i class="fas fa-tractor"></i></div>
+            <div class="absolute bottom-32 right-10 text-3xl text-white"><i class="fas fa-mountain"></i></div>
+        </div>
+        
+        <div class="container mx-auto px-4 text-center text-white relative z-10">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in-up">
+                Selamat Datang di <span class="text-green-light">Dusun Gagan</span>
+            </h1>
+            <p class="text-lg md:text-xl lg:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in-up animation-delay-200">
+                Mengenal Lebih Dekat Kehidupan dan Potensi Dusun Gagan
+            </p>
+            <a href="profil.html" class="inline-flex items-center px-8 py-4 bg-green-medium hover:bg-green-deep text-white font-semibold rounded-full shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 animate-fade-in-up animation-delay-400">
+                <i class="fas fa-leaf text-sun-yellow mr-2"></i>
+                Jelajahi Dusun
+            </a>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-sun-yellow"></i>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="relative">
+        <!-- Quick Info Section -->
+        <section class="py-16 lg:py-24 bg-white">
+          <div class="container mx-auto px-4 lg:px-8">
+            <h2 class="text-3xl lg:text-4xl font-bold text-center text-sky-deep mb-12">
+              <i class="fas fa-chart-bar text-sun-yellow mr-3"></i>
+              Informasi Singkat
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+              <div class="bg-white p-6 rounded-2xl shadow-lg text-center transform hover:-translate-y-2 transition-all duration-300 group">
+                <div class="w-16 h-16 bg-gradient-to-br from-green-medium to-green-deep rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fas fa-users text-2xl text-white"></i>
+                </div>
+                <h3 class="text-xl font-bold text-sky-deep mb-2">Jumlah Penduduk</h3>
+                <p class="text-2xl font-semibold text-green-deep">424 Jiwa</p>
+              </div>
+              <div class="bg-white p-6 rounded-2xl shadow-lg text-center transform hover:-translate-y-2 transition-all duration-300 group">
+                <div class="w-16 h-16 bg-gradient-to-br from-green-medium to-green-deep rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fas fa-home text-2xl text-white"></i>
+                </div>
+                <h3 class="text-xl font-bold text-sky-deep mb-2">Jumlah KK</h3>
+                <p class="text-2xl font-semibold text-green-deep">147 KK</p>
+              </div>
+              <div class="bg-white p-6 rounded-2xl shadow-lg text-center transform hover:-translate-y-2 transition-all duration-300 group">
+                <div class="w-16 h-16 bg-gradient-to-br from-green-medium to-green-deep rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fas fa-map-marker-alt text-2xl text-white"></i>
+                </div>
+                <h3 class="text-xl font-bold text-sky-deep mb-2">Luas Wilayah</h3>
+                <p class="text-2xl font-semibold text-green-deep">290.329 m<sup>2</sup></p>
+              </div>
+              <div class="bg-white p-6 rounded-2xl shadow-lg text-center transform hover:-translate-y-2 transition-all duration-300 group">
+                <div class="w-16 h-16 bg-gradient-to-br from-green-medium to-green-deep rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fas fa-seedling text-2xl text-white"></i>
+                </div>
+                <h3 class="text-xl font-bold text-sky-deep mb-2">Mata Pencaharian</h3>
+                <p class="text-xl font-semibold text-green-deep">Pertanian</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="py-16 lg:py-24 bg-gradient-to-br from-sky-light to-green-light">
+            <div class="container mx-auto px-4 lg:px-8">
+                <h2 class="text-3xl lg:text-4xl font-bold text-center text-sky-deep mb-12">
+                    <i class="fas fa-star text-sun-yellow mr-3"></i>
+                    Mengapa Berkunjung ke Dusun Gagan?
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+                    <!-- Lingkungan Asri -->
+                    <div class="group cursor-pointer">
+                        <div class="bg-white p-6 lg:p-8 rounded-2xl shadow-lg text-center h-full text-black">
+                            <div class="w-20 h-20 bg-gradient-to-br from-green-medium to-green-deep rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-leaf text-3xl text-white"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-sky-deep mb-4">Lingkungan Asri</h3>
+                            <p class="text-gray-600 leading-relaxed">Udara sejuk pegunungan dengan pemandangan alam yang masih alami dan terjaga</p>
+                        </div>
+                    </div>
+                    <!-- Masyarakat Ramah -->
+                    <div class="group cursor-pointer">
+                        <div class="bg-white p-6 lg:p-8 rounded-2xl shadow-lg text-center h-full text-black">
+                            <div class="w-20 h-20 bg-gradient-to-br from-sky-medium to-sky-deep rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-handshake text-3xl text-white"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-sky-deep mb-4">Masyarakat Ramah</h3>
+                            <p class="text-gray-600 leading-relaxed">Tradisi gotong royong yang kuat dan keramahan penduduk yang menyambut setiap tamu</p>
+                        </div>
+                    </div>
+                    <!-- Potensi Agro -->
+                    <div class="group cursor-pointer">
+                        <div class="bg-white p-6 lg:p-8 rounded-2xl shadow-lg text-center h-full text-black">
+                            <div class="w-20 h-20 bg-gradient-to-br from-green-medium to-green-deep rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-tractor text-3xl text-white"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-sky-deep mb-4">Potensi Agro</h3>
+                            <p class="text-gray-600 leading-relaxed">Hasil pertanian berkualitas tinggi dengan sistem irigasi yang baik</p>
+                        </div>
+                    </div>
+                    <!-- Wisata Foto -->
+                    <div class="group cursor-pointer">
+                        <div class="bg-white p-6 lg:p-8 rounded-2xl shadow-lg text-center h-full text-black">
+                            <div class="w-20 h-20 bg-gradient-to-br from-sky-medium to-green-medium rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-camera text-3xl text-white"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-sky-deep mb-4">Wisata Foto</h3>
+                            <p class="text-gray-600 leading-relaxed">Spot-spot menarik untuk fotografi dengan latar belakang alam yang menawan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News/Updates Section -->
+        <section class="py-16 lg:py-24 bg-white">
+            <div class="container mx-auto px-4 lg:px-8">
+                <h2 class="text-3xl lg:text-4xl font-bold text-center text-sky-deep mb-12">
+                    <i class="fas fa-newspaper text-sun-yellow mr-3"></i>
+                    Berita & Kegiatan Terbaru
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-12">
+                    <article class="bg-white rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden group">
+                        <div class="relative overflow-hidden">
+                            <img src="img/kegiatan/Jamur Tiram.png" alt="Kegiatan Jamur Tiram" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-sky-deep mb-3 group-hover:text-sky-deep transition-colors">Jamur Tiram</h3>
+                            <p class="text-gray-600 leading-relaxed">Budidaya jamur tiram di Dusun Gagan.</p>
+                        </div>
+                    </article>
+                    <article class="bg-white rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden group">
+                        <div class="relative overflow-hidden">
+                            <img src="img/kegiatan/Merti Dusun Gagan.png" alt="Merti Dusun" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-sky-deep mb-3 group-hover:text-sky-deep transition-colors">Merti Dusun</h3>
+                            <p class="text-gray-600 leading-relaxed">Acara syukuran dusun.</p>
+                        </div>
+                    </article>
+                    <article class="bg-white rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden group">
+                        <div class="relative overflow-hidden">
+                            <img src="img/kegiatan/Senam Jantung Sehat.png" alt="Senam Jantung Sehat" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-sky-deep mb-3 group-hover:text-sky-deep transition-colors">Senam Jantung Sehat</h3>
+                            <p class="text-gray-600 leading-relaxed">Kegiatan senam bersama untuk menjaga kesehatan jantung.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="text-center">
+                    <a href="kegiatan.html" class="inline-flex items-center px-8 py-4 bg-transparent border-2 border-sky-deep text-sky-deep hover:bg-sky-deep hover:text-white font-semibold rounded-full transition-all duration-300 transform hover:-translate-y-1">
+                        <i class="fas fa-calendar-alt mr-2"></i>
+                        Lihat Semua Kegiatan
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-br from-sky-deep to-green-deep text-white">
+        <div class="container mx-auto px-4 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <i class="fas fa-mountain text-3xl text-sun-yellow"></i>
+                        <span class="text-2xl font-bold">Dusun Gagan</span>
+                    </div>
+                    <p class="text-sky-light leading-relaxed mb-6">Website ini dibuat sebagai bagian dari program KKN-BN AA.83.001 UPN "Veteran" Yogyakarta untuk memperkenalkan Dusun Gagan kepada masyarakat luas dan melestarikan nilai-nilai budaya setempat.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/story.of.gagan?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="w-10 h-10 bg-sky-light/20 rounded-full flex items-center justify-center hover:bg-sky-light hover:text-sky-deep transition-all duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.instagram.com/remaja_gagan?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="w-10 h-10 bg-sky-light/20 rounded-full flex items-center justify-center hover:bg-sky-light hover:text-sky-deep transition-all duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@story.of.gagan?is_from_webapp=1&sender_device=pc" class="w-10 h-10 bg-sky-light/20 rounded-full flex items-center justify-center hover:bg-sky-light hover:text-sky-deep transition-all duration-300">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-green-light mb-4">
+                        <i class="fas fa-phone mr-2"></i>
+                        Kontak
+                    </h3>
+                    <div class="space-y-3">
+                        <p class="flex items-start text-sky-light">
+                            <i class="fas fa-map-marker-alt mr-3 text-sun-yellow mt-1"></i>
+                            Dusun Gagan, Desa Bligo<br>Kecamatan Ngluwar, Kabupaten Magelang
+                        </p>
+                    </div>
+                    <div class="mt-6 flex justify-center lg:justify-end space-x-4">
+                        <img src="img/logo kabupaten magelang.png" alt="Logo Kabupaten Magelang" class="w-12 h-13">
+                        <img src="img/logo kkn.png" alt="Logo KKN-BN AA.83.001" class="w-12 h-auto">
+                        <img src="img/logo upn.png" alt="Logo UPN Veteran Yogyakarta" class="w-12 h-auto">
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-sky-light/30 mt-8 pt-8 text-center">
+                <p class="text-sky-light">
+                    &copy; 2025 Website Profil Dusun Gagan. Dibuat dengan 
+                    <i class="fas fa-heart text-red-400 mx-1"></i> untuk masyarakat.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    
+    <style>
+        @keyframes fade-in-up {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fade-in-up {
+            animation: fade-in-up 0.8s ease-out forwards;
+        }
+        
+        .animation-delay-200 {
+            animation-delay: 0.2s;
+            opacity: 0;
+        }
+        
+        .animation-delay-400 {
+            animation-delay: 0.4s;
+            opacity: 0;
+        }
+        
+        .nav-link {
+            position: relative;
+            color: #1E3A8A !important;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #FFD700;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        i.fas { color: #FFD700 !important; }
+        .bg-sky-dark, .bg-sky-dark *, .bg-sky-blue, .bg-sky-blue * { color: #FFF !important; }
+        .bg-white, .bg-white *, .prose, .prose * { color: #000 !important; }
+    </style>
+</body>
+</html>
